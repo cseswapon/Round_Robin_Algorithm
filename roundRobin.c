@@ -37,15 +37,17 @@ void roundRobinScheduling(struct Process processes[], int n, float quantum)
 int main()
 {
     int i, n;
-    float quantum;
+    float quantum = 0.02;
 
     // Predefined burst times
     int burst_times[] = {2, 6, 8, 1, 9};
     n = sizeof(burst_times) / sizeof(burst_times[0]);
 
     // Input quantum time
-    printf("Enter the time quantum: ");
-    scanf("%f", &quantum);
+    /*
+        printf("Enter the time quantum: ");
+        scanf("%f", &quantum);
+    */
 
     // Input details of each process
     struct Process processes[MAX_PROCESSES];
